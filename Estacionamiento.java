@@ -34,6 +34,16 @@ public class Estacionamiento
                 horaS=horaSa;
                 minS=minS;
             }
+            else
+            {
+                System.out.println("vehículo no se encuentra registrado y no podrá calcular el costo del estacionamiento");
+            }
+            
         }
+    }
+    
+    public int sistemaControl()
+    {
+        return costo=costo*horaS;
     }
 }
