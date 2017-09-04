@@ -25,8 +25,15 @@ public class Estacionamiento
             }
         }
     }
-    public String salirCarro()
+    public void salirCarro(Vehiculo carro, int horaSa, int minSa )
     {
-        return "";
+        for(int i=0;i<estacionamiento.length;i++)
+        {
+            if(carro.dimePlaca() == estacionamiento[i].dimePlaca())
+            {
+                horaS=horaSa;
+                minS=minS;
+            }
+        }
     }
 }
