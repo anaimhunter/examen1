@@ -11,12 +11,12 @@ public class Estacionamiento
         costo=15;
     }
     
-    public void ingresarCarro(Vehiculo carro)
+    public void ingresarCarro(Vehiculo carro,String placa)
     {
        
         for(int i=0;i<estacionamiento.length;i++)
         {
-            if(carro.dimePlaca() == estacionamiento[i].dimePlaca())
+            if(carro.dimePlaca() == placa)
             {
                 if(i<estacionamiento.length)
                 {
